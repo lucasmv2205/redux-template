@@ -13,12 +13,12 @@ const Catalog = () => {
   }, []);
 
   return (
-    <div>
+    <main>
       <h1>Catalog</h1>
       {catalog.map((product) => (
         <CatalogItem key={product.id} product={product} />
       ))}
-    </div>
+    </main>
   );
 };
 
